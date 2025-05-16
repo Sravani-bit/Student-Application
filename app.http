@@ -1,0 +1,52 @@
+### Load data from JSONPlaceholder API into MongoDB
+GET http://localhost:3000/load
+Content-Type: application/json
+
+###
+
+### Get user by ID (change ID as needed)
+GET http://localhost:3000/users/2
+Content-Type: application/json
+
+###
+
+### Add a new user
+PUT http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "id": 12,
+  "name": "Test User2",
+  "username": "testuser2",
+  "email": "test@example2.com",
+  "address": {
+    "street": "Test Street",
+    "suite": "Apt 123",
+    "city": "Test City",
+    "zipcode": "12345-6789",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-234-567-8901",
+  "website": "example.com",
+  "company": {
+    "name": "Test Company",
+    "catchPhrase": "Test catchphrase",
+    "bs": "test bs"
+  },
+  "posts": []
+}
+
+###
+
+### Delete specific user by ID
+DELETE http://localhost:3000/users/12
+Content-Type: application/json
+
+###
+
+### Delete all users
+DELETE http://localhost:3000/users
+Content-Type: application/json
