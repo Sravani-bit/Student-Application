@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB setup
-const mongoUri = 'mongodb://127.0.0.1:27017';
+const mongoUri = 'mongodb+srv://sravanichennareddy01:FJP2FvubXAwrxNl0@cluster0.6oye3dh.mongodb.net/';
 const dbName = 'jsonplaceholder';
 const client = new MongoClient(mongoUri);
 let db: Db;

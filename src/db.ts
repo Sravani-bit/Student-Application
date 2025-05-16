@@ -1,8 +1,8 @@
 import { MongoClient, Db } from 'mongodb';
 
 // MongoDB Connection URI
-const uri = 'mongodb://localhost:27017/node_assignment';
-const dbName = 'node_assignment';
+const uri = 'mongodb+srv://sravanichennareddy01:FJP2FvubXAwrxNl0@cluster0.6oye3dh.mongodb.net/jsonplaceholder';
+const dbName = 'jsonplaceholder';
 const client = new MongoClient(uri);
 
 // Connect to MongoDB
